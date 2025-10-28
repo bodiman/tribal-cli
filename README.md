@@ -8,7 +8,7 @@ Tribal CLI provides commands for managing graph-based development workflows.
 
 ```bash
 # Add the tap
-brew tap tribal/tribal
+brew tap bodiman/tribal
 
 # Install tribal
 brew install tribal
@@ -16,7 +16,7 @@ brew install tribal
 
 ### Manual Installation
 
-Download the latest release from [GitHub Releases](https://github.com/tribal/tribal-cli/releases) and add it to your PATH.
+Download the latest release from [GitHub Releases](https://github.com/bodiman/tribal-cli/releases) and add it to your PATH.
 
 ## Usage
 
@@ -74,19 +74,19 @@ tribal push
 ### Building from source
 
 ```bash
-git clone https://github.com/tribal/tribal-cli.git
+git clone https://github.com/bodiman/tribal-cli.git
 cd tribal-cli
 go build -o tribal .
 ```
 
 ### Creating a release
 
-This project uses [GoReleaser](https://goreleaser.com/) for releases:
+This project uses [GoReleaser](https://goreleaser.com/) for releases and automatically updates the Homebrew tap:
 
 ```bash
-git tag v1.0.0
-git push origin v1.0.0
-goreleaser release --clean
+git tag v1.0.4
+git push origin v1.0.4
+# GitHub Actions will automatically create the release and update the Homebrew formula
 ```
 
 ## License

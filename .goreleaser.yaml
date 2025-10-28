@@ -47,11 +47,11 @@ changelog:
 
 brews:
   - name: tribal
-    homepage: https://github.com/tribal/tribal-cli
+    homepage: https://github.com/bodiman/tribal-cli
     description: "Tribal CLI - Graph-based development workflow"
     license: MIT
     repository:
-      owner: tribal
+      owner: bodiman
       name: homebrew-tribal
       token: "{{ .Env.GITHUB_TOKEN }}"
     directory: Formula
